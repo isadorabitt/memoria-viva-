@@ -55,6 +55,16 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Remover fundo branco de imagens do pequi */
+img[src*="pequi"] {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+img[src*="pequi"]::before {
+  display: none !important;
+}
+
 /* Accessibility - focus visible */
 *:focus-visible {
   outline: 3px solid var(--ipe-green);

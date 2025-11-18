@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Sun, Moon, Music, Calendar as CalendarIcon, Heart } from "lucide-react";
 import { useState } from "react";
+import PequiIcon from "./PequiIcon";
 
 const conversationExamples = [
   {
@@ -45,7 +46,7 @@ export default function AICompanion() {
                 <MessageCircle className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-dark">
-                Conheça o <span className="text-wisdom">Acolhe</span>
+                Conheça o <span className="text-wisdom">Pequi</span>
               </h2>
             </div>
 
@@ -103,7 +104,7 @@ export default function AICompanion() {
 
             <div className="flex flex-wrap gap-4">
               <button className="bg-wisdom text-white px-6 py-3 rounded-full font-medium hover:bg-wisdom-dark transition-colors shadow-lg">
-                Conversar com Acolhe
+                Conversar com Pequi
               </button>
               <button className="bg-white text-wisdom border-2 border-wisdom px-6 py-3 rounded-full font-medium hover:bg-wisdom/10 transition-colors">
                 Ver mais recursos
@@ -125,11 +126,11 @@ export default function AICompanion() {
                   {/* Header */}
                   <div className="bg-gradient-to-r from-wisdom to-wisdom-dark p-6 text-white">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-2xl">
-                        🥭
+                      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center p-2">
+                        <PequiIcon size={24} />
                       </div>
                       <div>
-                        <h3 className="font-bold text-lg">Sabichão</h3>
+                        <h3 className="font-bold text-lg">Pequi</h3>
                         <div className="flex items-center gap-1 text-sm opacity-90">
                           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                           Online
@@ -151,8 +152,8 @@ export default function AICompanion() {
                         transition={{ delay: index * 0.5 }}
                         className="flex gap-3"
                       >
-                        <div className="flex-shrink-0 w-8 h-8 bg-wisdom rounded-full flex items-center justify-center text-lg">
-                          🥭
+                        <div className="flex-shrink-0 w-8 h-8 bg-wisdom rounded-full flex items-center justify-center p-1">
+                          <PequiIcon size={20} />
                         </div>
                         <div className="flex-1">
                           <div className="bg-white rounded-2xl rounded-tl-sm p-4 shadow-sm">
@@ -173,9 +174,9 @@ export default function AICompanion() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: currentMessage === conversationExamples.length ? 1 : 0 }}
                     >
-                      <div className="flex-shrink-0 w-8 h-8 bg-wisdom rounded-full flex items-center justify-center text-lg">
-                        🥭
-                      </div>
+                      <div className="flex-shrink-0 w-8 h-8 bg-wisdom rounded-full flex items-center justify-center p-1">
+                          <PequiIcon size={20} />
+                        </div>
                       <div className="bg-white rounded-2xl rounded-tl-sm p-4 shadow-sm">
                         <div className="flex gap-1">
                           <div className="w-2 h-2 bg-wisdom rounded-full animate-bounce" />

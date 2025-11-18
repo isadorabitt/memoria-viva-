@@ -13,6 +13,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PitchPage() {
   return (
@@ -29,7 +30,9 @@ export default function PitchPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="text-8xl mb-8">🥭</div>
+            <div className="flex justify-center mb-8">
+              <img src="/pequi.png" alt="Pequi" width={96} height={96} className="object-contain" />
+            </div>
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
               <span className="text-ipe-dark">Memória Viva</span>
               <span className="text-cerrado-dark">+</span>
@@ -179,7 +182,7 @@ export default function PitchPage() {
                 },
                 {
                   icon: "🤖",
-                  title: "IA Acolhe",
+                  title: "Pequi",
                   description: "Companheiro emocional 24/7",
                   color: "wisdom",
                 },
@@ -290,9 +293,11 @@ export default function PitchPage() {
                 viewport={{ once: true }}
               >
                 <div className="text-center">
-                  <div className="text-8xl mb-6">🥭</div>
+                  <div className="flex justify-center mb-6">
+                      <img src="/pequi.png" alt="Pequi" width={96} height={96} className="object-contain" />
+                    </div>
                   <h3 className="text-3xl font-bold text-neutral-dark mb-4">
-                    Sabichão
+                    Pequi
                   </h3>
                   <p className="text-xl text-neutral-dark/80">
                     Mascote que conecta tecnologia com a cultura goiana (pequi

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Heart, Users, Sparkles, MapPin } from "lucide-react";
+import PequiIcon from "./PequiIcon";
 
 export default function Hero() {
   return (
@@ -102,12 +103,33 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="relative">
-              {/* Mascot Placeholder - Sabichão */}
-              <div className="aspect-square bg-gradient-to-br from-cerrado to-cerrado-dark rounded-3xl shadow-2xl p-8 flex items-center justify-center transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="text-center text-white space-y-4">
-                  <div className="text-8xl">🥭</div>
-                  <p className="text-2xl font-bold">Sabichão</p>
-                  <p className="text-sm opacity-90">Seu companheiro digital</p>
+              {/* Mascot Card - Pequi */}
+              <div className="aspect-square bg-gradient-to-br from-cerrado to-cerrado-dark rounded-3xl shadow-2xl p-6 md:p-10 flex items-center justify-center transform rotate-3 hover:rotate-0 transition-all duration-300 hover:shadow-3xl">
+                <div className="text-center text-white space-y-5 w-full">
+                  {/* Imagem do Pequi - maior e sem fundo */}
+                  <div className="flex justify-center mb-2">
+                    <div 
+                      style={{ 
+                        backgroundColor: 'transparent',
+                        background: 'transparent'
+                      }}
+                    >
+                      <PequiIcon 
+                        size={130} 
+                        className="drop-shadow-2xl"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Nome */}
+                  <div>
+                    <p className="text-3xl md:text-4xl font-bold tracking-tight">Pequi</p>
+                  </div>
+                  
+                  {/* Tagline */}
+                  <div>
+                    <p className="text-sm md:text-base opacity-90 font-medium">Seu companheiro digital</p>
+                  </div>
                 </div>
               </div>
 
@@ -122,7 +144,7 @@ export default function Hero() {
                     <Heart className="w-6 h-6 text-ipe-dark" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-neutral-dark">Acolhe IA</p>
+                    <p className="text-sm font-medium text-neutral-dark">Pequi</p>
                     <p className="text-xs text-neutral-dark/60">Sempre ao seu lado</p>
                   </div>
                 </div>
