@@ -9,7 +9,7 @@ Demo frontend desenvolvido para o **Campus GO - Ideathon 2025 - Desafio 1**
 Plataforma digital que combina:
 - 🎙️ **Narração de Memórias** com IA (storytelling terapêutico)
 - 👥 **Rede Social Segura** entre idosos (Círculos de Sabedoria)
-- 🤖 **IA Companheira "Acolhe"** (suporte emocional personalizado)
+- 🤖 **IA Companheira "Pequi"** (suporte emocional personalizado)
 - 🗺️ **Integração Territorial** com serviços públicos de Goiás
 - 🎤 **Interface por Voz** (zero barreira tecnológica)
 
