@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Sun, Moon, Music, Calendar as CalendarIcon, Heart } from "lucide-react";
+import { MessageCircle, Sun, Moon, Music, Calendar as CalendarIcon, Heart, Mic } from "lucide-react";
 import { useState } from "react";
 import PequiIcon from "./PequiIcon";
 
@@ -27,9 +27,11 @@ export default function AICompanion() {
   const [currentMessage, setCurrentMessage] = useState(0);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-wisdom-light/30 via-white to-cerrado-light/30 relative overflow-hidden">
-      {/* Asymmetric decoration */}
+    <section className="py-20 md:py-28 bg-gradient-to-br from-wisdom-light/30 via-white to-cerrado-light/30 relative overflow-hidden">
+      {/* Asymmetric decorations - Enhanced */}
       <div className="absolute bottom-0 right-0 w-2/3 h-1/2 bg-gradient-to-tl from-ipe-light/20 to-transparent rounded-tl-[200px]" />
+      <div className="absolute top-0 left-0 w-1/2 h-1/3 bg-gradient-to-br from-wisdom/10 to-transparent rounded-br-[150px]" />
+      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-cerrado/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -198,7 +200,7 @@ export default function AICompanion() {
                         disabled
                       />
                       <button className="w-10 h-10 bg-wisdom rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">🎤</span>
+                        <Mic className="w-5 h-5 text-white" />
                       </button>
                     </div>
                   </div>
